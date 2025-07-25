@@ -49,7 +49,7 @@ function Header() {
             </SignInButton>
           </SignedOut>
           <SignedIn>
-            {isLoaded && user.unsafeMetadata?.role==="recruiter" && <Link to={"/post-job"}>
+            {isLoaded &&  user&& user.unsafeMetadata?.role==="recruiter" && <Link to={"/post-job"}>
               <Button
                 variant="destructive"
                 className="rounded-full mt-8 hover:cursor-pointer"
